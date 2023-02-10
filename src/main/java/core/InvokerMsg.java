@@ -17,7 +17,7 @@ public class InvokerMsg implements Serializable{
 	/**
 	 * 参数列表
 	 */
-	private Class<?>[] parames;
+	private Class<?>[] params;
 	/**
 	 * 参数值
 	 */
@@ -35,11 +35,11 @@ public class InvokerMsg implements Serializable{
 	public void setMethodName(String methodName) {
 		this.methodName = methodName;
 	}
-	public Class<?>[] getParames() {
-		return parames;
+	public Class<?>[] getParams() {
+		return params;
 	}
-	public void setParames(Class<?>[] parames) {
-		this.parames = parames;
+	public void setParams(Class<?>[] params) {
+		this.params = params;
 	}
 	public Object[] getValues() {
 		return values;

@@ -46,7 +46,7 @@ public class RegistryHandler extends ChannelInboundHandlerAdapter {
         if(REGISTRY_MAP.containsKey(request.getClassName())){
             Object clazz = REGISTRY_MAP.get(request.getClassName());
 
-            Method m = clazz.getClass().getMethod(request.getMethodName(), request.getParames());
+            Method m = clazz.getClass().getMethod(request.getMethodName(), request.getParams());
             result = m.invoke(clazz, request.getValues());
         }
 
